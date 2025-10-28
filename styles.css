@@ -63,8 +63,8 @@ body {
    Typography
    ================================ */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -142,7 +142,7 @@ p {
 }
 
 .logo-text {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-weight: 700;
     background: var(--gradient-primary);
@@ -325,7 +325,7 @@ p {
 }
 
 .stat-number {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     font-weight: 700;
     background: var(--gradient-primary);
