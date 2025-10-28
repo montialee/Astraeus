@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animateStats();
     initParallax();
 
-    console.log('%cAstraeus MVP Website', 'font-size: 24px; font-weight: bold; color: #6366f1;');
+    console.log('%cAstraea MVP Website', 'font-size: 24px; font-weight: bold; color: #6366f1;');
     console.log('%cBuilt for astrophotographers who demand precision', 'font-size: 14px; color: #94a3b8;');
 });
 

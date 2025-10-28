@@ -1,17 +1,17 @@
-# Astraeus - Advanced Astrophotography Planning Application
+# Astraea - Advanced Astrophotography Planning Application
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://astraeus.app)
+[![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://astraea.app)
 
 **Plan the Perfect Astrophotography Shot**
 
-Astraeus is an advanced mobile application designed for astrophotographers who demand precision, intelligence, and seamless planning capabilities. Built on scientific foundations and powered by real-time celestial mechanics, AR technology, and intelligent algorithms.
+Astraea is an advanced mobile application designed for astrophotographers who demand precision, intelligence, and seamless planning capabilities. Built on scientific foundations and powered by real-time celestial mechanics, AR technology, and intelligent algorithms.
 
 ---
 
 ## 🌟 MVP Website
 
-This repository contains the MVP landing page for Astraeus, showcasing the application's core features and value proposition to early adopters.
+This repository contains the MVP landing page for Astraea, showcasing the application's core features and value proposition to early adopters.
 
 ### Features of the Landing Page
 
@@ -30,8 +30,8 @@ This repository contains the MVP landing page for Astraeus, showcasing the appli
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Astraeus.git
-   cd Astraeus
+   git clone https://github.com/yourusername/Astraea.git
+   cd Astraea
    ```
 
 2. **Open in browser**
@@ -52,7 +52,7 @@ This repository contains the MVP landing page for Astraeus, showcasing the appli
 ### Project Structure
 
 ```
-Astraeus/
+Astraea/
 ├── index.html          # Main landing page
 ├── styles.css          # Dark theme styling and animations
 ├── script.js           # Interactive features and form handling
@@ -192,12 +192,12 @@ Astraeus/
 
 ## 🤝 Contributing
 
-Astraeus is currently in early development. If you're interested in contributing:
+Astraea is currently in early development. If you're interested in contributing:
 
 1. **Join the Waitlist**: Sign up for early access on our landing page
 2. **Provide Feedback**: Share your astrophotography workflow and pain points
 3. **Beta Testing**: Help us test features when beta program launches
-4. **Spread the Word**: Share Astraeus with fellow astrophotographers
+4. **Spread the Word**: Share Astraea with fellow astrophotographers
 
 ---
 
@@ -209,10 +209,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Website**: [astraeus.app](https://astraeus.app) (coming soon)
-- **Email**: hello@astraeus.app
-- **Twitter**: [@AstraeusApp](https://twitter.com/AstraeusApp)
-- **GitHub**: [github.com/yourusername/Astraeus](https://github.com/yourusername/Astraeus)
+- **Website**: [astraea.app](https://astraea.app) (coming soon)
+- **Email**: hello@astraea.app
+- **Twitter**: [@AstraeaApp](https://twitter.com/AstraeaApp)
+- **GitHub**: [github.com/yourusername/Astraea](https://github.com/yourusername/Astraea)
 
 ---
 
@@ -242,4 +242,4 @@ For the full technical specification, see the [ARCHITECTURE.md](ARCHITECTURE.md)
 
 **Built with precision for astrophotographers worldwide** ✨
 
-*Astraeus - From Greek mythology: The Titan god of dusk, stars, and planetary motion*
+*Astraea - From Greek mythology: The goddess of justice, innocence, purity and precision*
