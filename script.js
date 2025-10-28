@@ -406,6 +406,29 @@ function initParallax() {
 }
 
 // ================================
+// Tech Constellation Interaction
+// ================================
+function initTechConstellation() {
+    const nodes = document.querySelectorAll('.tech-node');
+
+    nodes.forEach((node, index) => {
+        // Set animation delay based on data attribute
+        node.style.setProperty('--delay', node.dataset.delay || index);
+
+        // Add hover effect to connected lines
+        node.addEventListener('mouseenter', () => {
+            const lines = document.querySelectorAll('.constellation-line');
+            lines[index]?.setAttribute('stroke-width', '3');
+        });
+
+        node.addEventListener('mouseleave', () => {
+            const lines = document.querySelectorAll('.constellation-line');
+            lines[index]?.setAttribute('stroke-width', '1.5');
+        });
+    });
+}
+
+// ================================
 // Initialize All Features
 // ================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -414,6 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     animateStats();
     initParallax();
+    initTechConstellation();
 
     console.log('%cAstraeus MVP Website', 'font-size: 24px; font-weight: bold; color: #6366f1;');
     console.log('%cBuilt for astrophotographers who demand precision', 'font-size: 14px; color: #94a3b8;');

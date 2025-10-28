@@ -157,44 +157,82 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Built on Scientific Foundations</h2>
-                <p class="section-subtitle">Leveraging the best astronomical data sources and computation engines</p>
+                <p class="section-subtitle">A constellation of cutting-edge technologies powering your astrophotography</p>
             </div>
 
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <div class="tech-badge">Data Source</div>
-                    <h3>SIMBAD Database</h3>
-                    <p>10,000+ deep-sky objects with scientific-grade coordinates, magnitudes, and classifications from CDS Strasbourg.</p>
+            <div class="tech-constellation">
+                <svg class="constellation-lines" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+                    <!-- Connection lines -->
+                    <line x1="400" y1="300" x2="200" y2="150" class="constellation-line" />
+                    <line x1="400" y1="300" x2="600" y2="150" class="constellation-line" />
+                    <line x1="400" y1="300" x2="150" y2="350" class="constellation-line" />
+                    <line x1="400" y1="300" x2="650" y2="350" class="constellation-line" />
+                    <line x1="400" y1="300" x2="250" y2="500" class="constellation-line" />
+                    <line x1="400" y1="300" x2="550" y2="500" class="constellation-line" />
+                </svg>
+
+                <!-- Center Hub -->
+                <div class="tech-hub">
+                    <div class="hub-glow"></div>
+                    <div class="hub-content">
+                        <h3>Astraeus</h3>
+                        <p>Core Engine</p>
+                    </div>
                 </div>
 
-                <div class="tech-card">
-                    <div class="tech-badge">Computation</div>
-                    <h3>Astronomy Engine</h3>
-                    <p>Sub-arcminute accuracy for all celestial calculations. High-performance, offline-capable ephemeris engine.</p>
+                <!-- Technology Nodes -->
+                <div class="tech-node" style="--node-x: 200px; --node-y: 150px;" data-delay="0">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <span class="node-label">Data Source</span>
+                        <h4>SIMBAD</h4>
+                        <p>10,000+ deep-sky objects with scientific-grade coordinates and classifications</p>
+                    </div>
                 </div>
 
-                <div class="tech-card">
-                    <div class="tech-badge">AR Framework</div>
-                    <h3>ARKit & ARCore</h3>
-                    <p>Native iOS and Android AR frameworks for precision horizon mapping and real-time sky overlay.</p>
+                <div class="tech-node" style="--node-x: 600px; --node-y: 150px;" data-delay="1">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <span class="node-label">Computation</span>
+                        <h4>Astronomy Engine</h4>
+                        <p>Sub-arcminute accuracy for real-time celestial calculations</p>
+                    </div>
                 </div>
 
-                <div class="tech-card">
-                    <div class="tech-badge">Backend</div>
-                    <h3>Python + PostgreSQL</h3>
-                    <p>Scientific computing with Astropy. PostGIS-enabled spatial queries for efficient catalog searching.</p>
+                <div class="tech-node" style="--node-x: 150px; --node-y: 350px;" data-delay="2">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <span class="node-label">AR Framework</span>
+                        <h4>ARKit & ARCore</h4>
+                        <p>Precision horizon mapping and real-time sky overlay</p>
+                    </div>
                 </div>
 
-                <div class="tech-card">
-                    <div class="tech-badge">Weather</div>
-                    <h3>Astrospheric API</h3>
-                    <p>Purpose-built astronomy weather forecasts with seeing, transparency, and cloud metrics.</p>
+                <div class="tech-node" style="--node-x: 650px; --node-y: 350px;" data-delay="3">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <span class="node-label">Backend</span>
+                        <h4>Python + PostgreSQL</h4>
+                        <p>Scientific computing with PostGIS spatial queries</p>
+                    </div>
                 </div>
 
-                <div class="tech-card">
-                    <div class="tech-badge">Darkness Data</div>
-                    <h3>Light Pollution Atlas</h3>
-                    <p>Custom geospatial service for accurate sky brightness and Bortle scale classification.</p>
+                <div class="tech-node" style="--node-x: 250px; --node-y: 500px;" data-delay="4">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <span class="node-label">Weather</span>
+                        <h4>Astrospheric API</h4>
+                        <p>Astronomy-specific forecasts with seeing and transparency</p>
+                    </div>
+                </div>
+
+                <div class="tech-node" style="--node-x: 550px; --node-y: 500px;" data-delay="5">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <span class="node-label">Darkness Data</span>
+                        <h4>Light Pollution Atlas</h4>
+                        <p>Accurate sky brightness and Bortle scale classification</p>
+                    </div>
                 </div>
             </div>
         </div>
