@@ -651,6 +651,48 @@ p {
    Responsive Design
    ================================ */
 @media (max-width: 768px) {
+    /* Container and spacing */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Typography adjustments */
+    h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+
+    h3 {
+        font-size: clamp(1.125rem, 4vw, 1.35rem);
+    }
+
+    p, .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Section spacing */
+    .features,
+    .technology,
+    .how-it-works,
+    .early-access {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: var(--spacing-lg);
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
     .nav-links {
         gap: var(--spacing-sm);
     }
@@ -659,54 +701,203 @@ p {
         display: none;
     }
 
-    .hero {
-        min-height: auto;
-        padding-top: 100px;
+    .logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .btn-primary {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero section */
+    .hero-content {
+        padding: var(--spacing-md) 0;
+    }
+
+    .hero-subtitle {
+        max-width: 100%;
+        margin: 0 auto var(--spacing-md);
     }
 
     .hero-cta {
         flex-direction: column;
         align-items: stretch;
+        gap: 0.75rem;
     }
 
     .btn-large {
         width: 100%;
         text-align: center;
+        padding: 0.875rem 1.5rem;
     }
 
     .hero-stats {
         gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+        flex-wrap: wrap;
     }
 
-    .features-grid,
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* Galaxy optimization for mobile */
+    .galaxy {
+        opacity: 0.6;
+    }
+
+    /* Features grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .feature-card {
+        padding: var(--spacing-sm);
+    }
+
+    .feature-title {
+        font-size: 1.125rem;
+    }
+
+    .feature-description {
+        font-size: 0.95rem;
+    }
+
+    /* Technology section */
     .tech-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
 
+    .tech-card {
+        padding: var(--spacing-sm);
+    }
+
+    .section-header {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .section-title {
+        margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Workflow */
     .workflow {
         flex-direction: column;
+    }
+
+    .workflow-step {
+        padding: var(--spacing-sm);
     }
 
     .workflow-arrow {
         transform: rotate(90deg);
         display: block;
+        margin: 0.5rem 0;
     }
 
+    .step-number {
+        width: 56px;
+        height: 56px;
+        font-size: 1.75rem;
+    }
+
+    /* Early access form */
     .form-group {
         flex-direction: column;
+        gap: 0.75rem;
     }
 
     .form-group input,
     .form-group button {
         width: 100%;
+        min-width: auto;
+    }
+
+    .form-group input {
+        padding: 0.875rem 1.25rem;
+    }
+
+    .early-access-features {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: flex-start;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--spacing-lg) 0 var(--spacing-md);
     }
 
     .footer-content {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
     }
 
     .footer-links {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .footer-column {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .stat {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+/* Tablet landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .features-grid,
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

@@ -250,22 +250,6 @@ function create3DGalaxy() {
 
     console.log(`Created galaxy with ${particles.length} particles in ${spiralArms} spiral arms`);
 
-    // Scroll-based rotation
-    let lastScrollY = 0;
-    let rotation = 0;
-
-    window.addEventListener('scroll', () => {
-        const scrollY = window.pageYOffset;
-        const scrollDelta = scrollY - lastScrollY;
-        lastScrollY = scrollY;
-
-        // Update rotation based on scroll - subtle speed to maintain spiral shape
-        rotation += scrollDelta * 0.08;
-
-        // Apply rotation to entire galaxy - gentle multipliers to prevent vertical slice
-        galaxy.style.transform = `rotateX(${rotation * 0.03}deg) rotateY(${rotation * 0.06}deg) rotateZ(${rotation * 0.02}deg)`;
-    });
-
     // Subtle continuous rotation animation
     let time = 0;
     function animateGalaxy() {
