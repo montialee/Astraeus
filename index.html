@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Astraeus - Advanced Astrophotography Planning Application. Plan perfect shots with AR horizon scanning, celestial mechanics, and intelligent target recommendations.">
+    <title>Astraeus - Advanced Astrophotography Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2V6M12 18V22M22 12H18M6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M19 19L16.5 16.5M5 5L7.5 7.5M19 5L16.5 7.5M5 19L7.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">Astraeus</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#technology">Technology</a>
+                    <a href="#early-access" class="btn btn-primary">Get Early Access</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="stars"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Plan the Perfect<br>
+                    <span class="gradient-text">Astrophotography</span> Shot
+                </h1>
+                <p class="hero-subtitle">
+                    Advanced planning tools powered by real-time celestial mechanics, AR horizon scanning,
+                    and intelligent target recommendations. Never miss a stellar moment again.
+                </p>
+                <div class="hero-cta">
+                    <a href="#early-access" class="btn btn-large btn-primary">Join the Waitlist</a>
+                    <a href="#features" class="btn btn-large btn-secondary">Explore Features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Deep Sky Objects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">&lt;1'</div>
+                        <div class="stat-label">Position Accuracy</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">AR</div>
+                        <div class="stat-label">Horizon Mapping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Intelligent Planning Tools</h2>
+                <p class="section-subtitle">Every feature designed to help you capture the cosmos</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 3V7M12 17V21M21 12H17M7 12H3" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">FoV Framing Intelligence</h3>
+                    <p class="feature-description">
+                        Input your sensor size and focal length. Our algorithm scores and ranks targets
+                        based on how perfectly they'll frame in your specific equipment setup.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Advanced Multi-Filter System</h3>
+                    <p class="feature-description">
+                        Filter by altitude, angular size, moon separation, object type, and sky quadrant.
+                        Find the perfect target for your conditions instantly.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 3C13.6569 3 15 4.34315 15 6C15 7.65685 13.6569 9 12 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Celestial Mechanics</h3>
+                    <p class="feature-description">
+                        See altitude/azimuth paths, transit times, and visibility windows. Powered by
+                        the Astronomy Engine for sub-arcminute accuracy—completely offline.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 21H17M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="8" cy="9" r="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 8L12 12L10 10L6 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AR Horizon Scanner</h3>
+                    <p class="feature-description">
+                        Map your local horizon with AR. Scan trees, buildings, and terrain to see exactly
+                        when targets will clear obstructions at your shooting location.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Landscape Alignment Calculator</h3>
+                    <p class="feature-description">
+                        Pin a foreground object, select a celestial target and time. We calculate the exact
+                        GPS coordinates where you need to stand for perfect alignment.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 10C20 6.68629 17.3137 4 14 4C11.6124 4 9.55795 5.37083 8.61229 7.35635M8.61229 7.35635C8.20975 7.1247 7.75166 7 7.26316 7C5.46112 7 4 8.46112 4 10.2632C4 10.4384 4.01188 10.611 4.03509 10.7803M8.61229 7.35635C8.86667 7.91398 9 8.53971 9 9.19444C9 10.1917 8.63109 11.1027 8.01861 11.7821" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M9 14H15M12 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Astronomy-Specific Weather</h3>
+                    <p class="feature-description">
+                        Integration with Astrospheric API provides seeing, transparency, and cloud cover
+                        data—the metrics that actually matter for astrophotography.
+                    </p>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1"/>
+                            <path d="M12 3V5M12 19V21M21 12H19M5 12H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Light Pollution Mapping</h3>
+                    <p class="feature-description">
+                        Custom backend service samples real light pollution data to show Bortle class
+                        and sky quality for any location on Earth.
+                    </p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke="currentColor" stroke-width="2"/>
+                            <rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 13L11 15L15 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Personal Target Management</h3>
+                    <p class="feature-description">
+                        Track captured objects and maintain a priority wishlist. The app adapts to hide
+                        completed targets and highlight your personal goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built on Scientific Foundations</h2>
+                <p class="section-subtitle">Leveraging the best astronomical data sources and computation engines</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-badge">Data Source</div>
+                    <h3>SIMBAD Database</h3>
+                    <p>10,000+ deep-sky objects with scientific-grade coordinates, magnitudes, and classifications from CDS Strasbourg.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-badge">Computation</div>
+                    <h3>Astronomy Engine</h3>
+                    <p>Sub-arcminute accuracy for all celestial calculations. High-performance, offline-capable ephemeris engine.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-badge">AR Framework</div>
+                    <h3>ARKit & ARCore</h3>
+                    <p>Native iOS and Android AR frameworks for precision horizon mapping and real-time sky overlay.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-badge">Backend</div>
+                    <h3>Python + PostgreSQL</h3>
+                    <p>Scientific computing with Astropy. PostGIS-enabled spatial queries for efficient catalog searching.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-badge">Weather</div>
+                    <h3>Astrospheric API</h3>
+                    <p>Purpose-built astronomy weather forecasts with seeing, transparency, and cloud metrics.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-badge">Darkness Data</div>
+                    <h3>Light Pollution Atlas</h3>
+                    <p>Custom geospatial service for accurate sky brightness and Bortle scale classification.</p>
+                </div>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="arch-section">
+                    <h4>Client (Mobile)</h4>
+                    <ul>
+                        <li>Native Swift/Kotlin</li>
+                        <li>Real-time calculations</li>
+                        <li>AR overlays</li>
+                        <li>Interactive sky chart</li>
+                    </ul>
+                </div>
+                <div class="arch-arrow">⟷</div>
+                <div class="arch-section">
+                    <h4>Server (Backend)</h4>
+                    <ul>
+                        <li>Curated object catalog</li>
+                        <li>API gateway & caching</li>
+                        <li>User sync</li>
+                        <li>Light pollution service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">From Planning to Perfect Shot</h2>
+                <p class="section-subtitle">A streamlined workflow for astrophotographers</p>
+            </div>
+
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <h3>Define Your Setup</h3>
+                    <p>Enter your camera sensor size, focal length, and location. The app calculates your exact field of view.</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <h3>Discover Targets</h3>
+                    <p>Apply intelligent filters. Get ranked recommendations of targets that perfectly frame in your equipment.</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <h3>Plan the Session</h3>
+                    <p>Check transit times, visibility windows, weather, and light pollution. Scan your horizon with AR.</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <h3>Capture & Track</h3>
+                    <p>Use alignment calculator for landscapes. Mark captured objects. Build your astrophotography portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Early Access Section -->
+    <section id="early-access" class="early-access">
+        <div class="container">
+            <div class="early-access-content">
+                <h2 class="section-title">Be Among the First</h2>
+                <p class="section-subtitle">Join the waitlist for early access to Astraeus</p>
+
+                <form class="waitlist-form" id="waitlistForm">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                    </div>
+                    <p class="form-note">We'll notify you when beta testing begins. No spam, ever.</p>
+                </form>
+
+                <div id="formMessage" class="form-message"></div>
+
+                <div class="early-access-features">
+                    <div class="benefit">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Early beta access</span>
+                    </div>
+                    <div class="benefit">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Shape the product</span>
+                    </div>
+                    <div class="benefit">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Special launch pricing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2V6M12 18V22M22 12H18M6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M19 19L16.5 16.5M5 5L7.5 7.5M19 5L16.5 7.5M5 19L7.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">Astraeus</span>
+                    </div>
+                    <p class="footer-tagline">Advanced astrophotography planning<br>powered by celestial mechanics</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#technology">Technology</a>
+                        <a href="#early-access">Early Access</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#documentation">Documentation</a>
+                        <a href="#api">API Reference</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#privacy">Privacy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Astraeus. All rights reserved.</p>
+                <p>Built with precision for astrophotographers worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
