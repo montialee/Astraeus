@@ -1,17 +1,17 @@
-# Astraea - Advanced Astrophotography Planning Application
+# Asteria - Advanced Astrophotography Planning Application
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://astraea.app)
 
 **Plan the Perfect Astrophotography Shot**
 
-Astraea is an advanced mobile application designed for astrophotographers who demand precision, intelligence, and seamless planning capabilities. Built on scientific foundations and powered by real-time celestial mechanics, AR technology, and intelligent algorithms.
+Asteria is an advanced mobile application designed for astrophotographers who demand precision, intelligence, and seamless planning capabilities. Built on scientific foundations and powered by real-time celestial mechanics, AR technology, and intelligent algorithms.
 
 ---
 
 ## 🌟 MVP Website
 
-This repository contains the MVP landing page for Astraea, showcasing the application's core features and value proposition to early adopters.
+This repository contains the MVP landing page for Asteria, showcasing the application's core features and value proposition to early adopters.
 
 ### Features of the Landing Page
 
@@ -30,8 +30,8 @@ This repository contains the MVP landing page for Astraea, showcasing the applic
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Astraea.git
-   cd Astraea
+   git clone https://github.com/yourusername/Asteria.git
+   cd Asteria
    ```
 
 2. **Open in browser**
@@ -52,7 +52,7 @@ This repository contains the MVP landing page for Astraea, showcasing the applic
 ### Project Structure
 
 ```
-Astraea/
+Asteria/
 ├── index.html          # Main landing page
 ├── styles.css          # Dark theme styling and animations
 ├── script.js           # Interactive features and form handling
@@ -192,12 +192,12 @@ Astraea/
 
 ## 🤝 Contributing
 
-Astraea is currently in early development. If you're interested in contributing:
+Asteria is currently in early development. If you're interested in contributing:
 
 1. **Join the Waitlist**: Sign up for early access on our landing page
 2. **Provide Feedback**: Share your astrophotography workflow and pain points
 3. **Beta Testing**: Help us test features when beta program launches
-4. **Spread the Word**: Share Astraea with fellow astrophotographers
+4. **Spread the Word**: Share Asteria with fellow astrophotographers
 
 ---
 
@@ -211,8 +211,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Website**: [astraea.app](https://astraea.app) (coming soon)
 - **Email**: hello@astraea.app
-- **Twitter**: [@AstraeaApp](https://twitter.com/AstraeaApp)
-- **GitHub**: [github.com/yourusername/Astraea](https://github.com/yourusername/Astraea)
+- **Twitter**: [@AsteriaApp](https://twitter.com/AsteriaApp)
+- **GitHub**: [github.com/yourusername/Asteria](https://github.com/yourusername/Asteria)
 
 ---
 
@@ -242,4 +242,4 @@ For the full technical specification, see the [ARCHITECTURE.md](ARCHITECTURE.md)
 
 **Built with precision for astrophotographers worldwide** ✨
 
-*Astraea - From Greek mythology: The goddess of justice, innocence, purity and precision*
+*Asteria - From Greek mythology: The Titan goddess of falling stars, nocturnal oracles and astrology*
