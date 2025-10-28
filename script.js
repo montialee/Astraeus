@@ -259,11 +259,11 @@ function create3DGalaxy() {
         const scrollDelta = scrollY - lastScrollY;
         lastScrollY = scrollY;
 
-        // Update rotation based on scroll - increased for more dramatic effect
-        rotation += scrollDelta * 0.3;
+        // Update rotation based on scroll - moderate speed
+        rotation += scrollDelta * 0.18;
 
-        // Apply rotation to entire galaxy - amplified multipliers
-        galaxy.style.transform = `rotateX(${rotation * 0.15}deg) rotateY(${rotation * 0.3}deg) rotateZ(${rotation * 0.15}deg)`;
+        // Apply rotation to entire galaxy - balanced multipliers
+        galaxy.style.transform = `rotateX(${rotation * 0.09}deg) rotateY(${rotation * 0.18}deg) rotateZ(${rotation * 0.09}deg)`;
     });
 
     // Subtle continuous rotation animation
