@@ -166,44 +166,89 @@ function create3DGalaxy() {
     const galaxy = document.getElementById('galaxy');
     if (!galaxy) return;
 
-    const particleCount = 800;
     const particles = [];
+    const spiralArms = 3; // Number of spiral arms
+    const particlesPerArm = 300;
+    const centerParticles = 100;
 
-    // Create galaxy particles in a spiral pattern
-    for (let i = 0; i < particleCount; i++) {
+    // Create bright galactic center
+    for (let i = 0; i < centerParticles; i++) {
         const particle = document.createElement('div');
         particle.className = 'galaxy-particle';
 
-        // Spiral galaxy mathematics
-        const angle = (i / particleCount) * Math.PI * 8; // Multiple rotations for spiral arms
-        const radius = (i / particleCount) * 400; // Distance from center
-        const armOffset = Math.sin(angle * 4) * 50; // Create spiral arms
+        const angle = Math.random() * Math.PI * 2;
+        const radius = Math.random() * 80;
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+        const z = (Math.random() - 0.5) * 40;
 
-        // Position in 3D space
-        const x = Math.cos(angle) * (radius + armOffset);
-        const y = Math.sin(angle) * (radius + armOffset);
-        const z = (Math.random() - 0.5) * 200; // Depth variation
+        const size = Math.random() * 4 + 2;
+        const brightness = Math.random() * 0.5 + 0.5;
 
-        // Size and color variation based on position
-        const size = Math.random() * 3 + 1;
-        const brightness = Math.random() * 0.8 + 0.2;
-
-        // Color gradient: blue to purple to pink (galaxy colors)
-        const hue = 240 + (i / particleCount) * 60; // 240 (blue) to 300 (magenta)
+        // Bright yellow-white center
+        const hue = 40 + Math.random() * 20;
         const saturation = 70 + Math.random() * 30;
-        const lightness = 50 + brightness * 30;
+        const lightness = 70 + brightness * 30;
 
         particle.style.width = `${size}px`;
         particle.style.height = `${size}px`;
         particle.style.background = `hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness})`;
-        particle.style.boxShadow = `0 0 ${size * 3}px hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness * 0.8})`;
+        particle.style.boxShadow = `0 0 ${size * 4}px hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness})`;
         particle.style.left = '50%';
         particle.style.top = '50%';
         particle.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
 
         galaxy.appendChild(particle);
-        particles.push({ element: particle, x, y, z, angle, radius });
+        particles.push({ element: particle, x, y, z });
     }
+
+    // Create distinct spiral arms
+    for (let arm = 0; arm < spiralArms; arm++) {
+        const armAngleOffset = (arm / spiralArms) * Math.PI * 2;
+
+        for (let i = 0; i < particlesPerArm; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'galaxy-particle';
+
+            // Logarithmic spiral formula for realistic galaxy arms
+            const t = (i / particlesPerArm) * 4; // Parameter along spiral
+            const spiralTightness = 0.3; // Lower = tighter spiral
+            const radius = 80 + t * 80; // Distance from center grows
+            const angle = armAngleOffset + t * Math.PI * 2 * spiralTightness;
+
+            // Add randomness within the arm (arm thickness)
+            const armThickness = 30 + t * 10; // Arms get thicker as they extend
+            const randomOffset = (Math.random() - 0.5) * armThickness;
+            const perpAngle = angle + Math.PI / 2;
+
+            const x = Math.cos(angle) * radius + Math.cos(perpAngle) * randomOffset;
+            const y = Math.sin(angle) * radius + Math.sin(perpAngle) * randomOffset;
+            const z = (Math.random() - 0.5) * 100 + (Math.random() - 0.5) * t * 30;
+
+            // Size varies along the arm
+            const size = Math.random() * 3 + 1;
+            const brightness = Math.random() * 0.6 + 0.3;
+
+            // Color transitions from blue (outer) to purple to pink (inner)
+            const colorPosition = 1 - (i / particlesPerArm);
+            const hue = 200 + colorPosition * 80; // 200 (cyan-blue) to 280 (magenta)
+            const saturation = 60 + Math.random() * 30;
+            const lightness = 50 + brightness * 25;
+
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.background = `hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness})`;
+            particle.style.boxShadow = `0 0 ${size * 3}px hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness * 0.8})`;
+            particle.style.left = '50%';
+            particle.style.top = '50%';
+            particle.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
+
+            galaxy.appendChild(particle);
+            particles.push({ element: particle, x, y, z, angle, radius });
+        }
+    }
+
+    console.log(`Created galaxy with ${particles.length} particles in ${spiralArms} spiral arms`);
 
     // Scroll-based rotation
     let lastScrollY = 0;
