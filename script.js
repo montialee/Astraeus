@@ -160,6 +160,87 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ================================
+// 3D Galaxy Background
+// ================================
+function create3DGalaxy() {
+    const galaxy = document.getElementById('galaxy');
+    if (!galaxy) return;
+
+    const particleCount = 800;
+    const particles = [];
+
+    // Create galaxy particles in a spiral pattern
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'galaxy-particle';
+
+        // Spiral galaxy mathematics
+        const angle = (i / particleCount) * Math.PI * 8; // Multiple rotations for spiral arms
+        const radius = (i / particleCount) * 400; // Distance from center
+        const armOffset = Math.sin(angle * 4) * 50; // Create spiral arms
+
+        // Position in 3D space
+        const x = Math.cos(angle) * (radius + armOffset);
+        const y = Math.sin(angle) * (radius + armOffset);
+        const z = (Math.random() - 0.5) * 200; // Depth variation
+
+        // Size and color variation based on position
+        const size = Math.random() * 3 + 1;
+        const brightness = Math.random() * 0.8 + 0.2;
+
+        // Color gradient: blue to purple to pink (galaxy colors)
+        const hue = 240 + (i / particleCount) * 60; // 240 (blue) to 300 (magenta)
+        const saturation = 70 + Math.random() * 30;
+        const lightness = 50 + brightness * 30;
+
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.background = `hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness})`;
+        particle.style.boxShadow = `0 0 ${size * 3}px hsla(${hue}, ${saturation}%, ${lightness}%, ${brightness * 0.8})`;
+        particle.style.left = '50%';
+        particle.style.top = '50%';
+        particle.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
+
+        galaxy.appendChild(particle);
+        particles.push({ element: particle, x, y, z, angle, radius });
+    }
+
+    // Scroll-based rotation
+    let lastScrollY = 0;
+    let rotation = 0;
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.pageYOffset;
+        const scrollDelta = scrollY - lastScrollY;
+        lastScrollY = scrollY;
+
+        // Update rotation based on scroll
+        rotation += scrollDelta * 0.1;
+
+        // Apply rotation to entire galaxy
+        galaxy.style.transform = `rotateX(${rotation * 0.05}deg) rotateY(${rotation * 0.1}deg) rotateZ(${rotation * 0.05}deg)`;
+    });
+
+    // Subtle continuous rotation animation
+    let time = 0;
+    function animateGalaxy() {
+        time += 0.001;
+
+        particles.forEach((p, i) => {
+            const offset = (i / particleCount) * Math.PI * 2;
+            const wave = Math.sin(time + offset) * 2;
+
+            p.element.style.transform = `
+                translate3d(${p.x}px, ${p.y}px, ${p.z + wave}px)
+            `;
+        });
+
+        requestAnimationFrame(animateGalaxy);
+    }
+    animateGalaxy();
+}
+
+// ================================
 // Enhanced Star Field Animation
 // ================================
 function createStarField() {
@@ -283,6 +364,7 @@ function initParallax() {
 // Initialize All Features
 // ================================
 document.addEventListener('DOMContentLoaded', () => {
+    create3DGalaxy();
     createStarField();
     initMobileMenu();
     animateStats();
